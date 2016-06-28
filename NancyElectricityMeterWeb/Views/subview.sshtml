@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>NancyElectricityMeterWeb</title>
+
+	<style type="text/css">
+
+		body {
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+<body>
+	<img src="@Path['~/Content/nancy-logo.png']" alt="Nancy logo" /><br />
+This has to show the latest image and the latest approved image.
+There should also be a option to se previous images.
+Even a image search by file date would be fine.
+
+
+@Partial['standardimage', Model.Id]
+</body>
+</html>

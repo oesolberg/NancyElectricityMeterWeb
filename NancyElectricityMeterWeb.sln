@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyElectricityMeterWeb", "NancyElectricityMeterWeb\NancyElectricityMeterWeb.csproj", "{ED638DD5-E755-4B7A-940D-5C94AB425686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataHandling", "DataHandling\DataHandling.csproj", "{14732F1A-339D-42E4-BF61-8549089DC021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMInterfaces", "EMInterfaces\EMInterfaces.csproj", "{901F9A12-F754-401F-B52B-449CA15E1864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED638DD5-E755-4B7A-940D-5C94AB425686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14732F1A-339D-42E4-BF61-8549089DC021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14732F1A-339D-42E4-BF61-8549089DC021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14732F1A-339D-42E4-BF61-8549089DC021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14732F1A-339D-42E4-BF61-8549089DC021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901F9A12-F754-401F-B52B-449CA15E1864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901F9A12-F754-401F-B52B-449CA15E1864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901F9A12-F754-401F-B52B-449CA15E1864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901F9A12-F754-401F-B52B-449CA15E1864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

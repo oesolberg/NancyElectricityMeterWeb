@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>NancyElectricityMeterWeb</title>
+
+	<style type="text/css">
+
+		body {
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+<body bgcolor="black" text="yellow">
+<p></p>
+<img src="@Model.ImageNotOutlinedSrc"/>
+<br/>
+    <br/>
+<img src="@Model.ImageOutlinedSrc"/>
+<br/>
+@Model.ElectricityNumber
+<br/>
+@Model.IsValidNumber
+    <br/>@Model.FileCreatedDateTimeString;
+
+
+
+
+</body>
+</html>
