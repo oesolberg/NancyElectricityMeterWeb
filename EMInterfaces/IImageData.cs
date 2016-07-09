@@ -10,6 +10,8 @@ namespace EMInterfaces
     {
         int Id { get; set; }
 
+        int? PreviousId { get; set; }
+
         int ElectricityValue { get; set; }
 
         int ElectricityValueSetByUser { get; set; }

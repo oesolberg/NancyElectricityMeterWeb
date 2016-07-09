@@ -6,6 +6,7 @@ namespace DataHandling
     public class ImageData:IImageData
     {
         public int Id { get; set; }
+        public int? PreviousId { get; set; }
         public int ElectricityValue { get; set; }
         public int ElectricityValueSetByUser { get; set; }
         public string OriginalFilename { get; set; }

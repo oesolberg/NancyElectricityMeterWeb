@@ -37,8 +37,8 @@ latest front image
 Previous images
 
 -->
-<br/><br/>
-    <a href="/showimage">Show latest image</a>
+    <br/><br/>
+    <a href="/showimage/@Model.PreviousId">Show previous image</a>
 
 </body>
 </html>

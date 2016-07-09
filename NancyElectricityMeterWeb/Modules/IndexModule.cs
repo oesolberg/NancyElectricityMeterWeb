@@ -18,7 +18,7 @@ namespace NancyElectricityMeterWeb.Modules
         {
             var vm = new ElectricityViewModel();
             var dbOp = new DataHandling.GetImageFromDatabase();
-            var imageData = dbOp.GetLastImageWithValidElectricityNumber();
+            var imageData = dbOp.GetImage(null,true);
            
             
             vm.ImageNotOutlinedSrc = $"data:image/gif;base64,{Convert.ToBase64String(imageData.JpgImageOfFrame)}";
@@ -34,6 +34,8 @@ namespace NancyElectricityMeterWeb.Modules
     internal class ElectricityViewModel
     {
         public int Id { get; set; }
+
+        public int? PreviousId { get; set; }
         public int ElectricityNumber { get; set; }
         public string ImageNotOutlinedSrc { get; set; }
         public string ImageOutlinedSrc { get; set; }

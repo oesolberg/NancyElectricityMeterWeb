@@ -81,7 +81,7 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Modules\ByteArrayResponse.cs" />
     <Compile Include="Modules\Extensions.cs" />
-    <Compile Include="Modules\ImageHandlerModule.cs" />
+    <Compile Include="Modules\ShowImageModule.cs" />
     <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Modules\ShowStandardImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,10 +93,7 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\ShowStandardImage.sshtml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Views\subview.sshtml">
+    <Content Include="Views\showimage.sshtml">
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\tw.pubxml" />
