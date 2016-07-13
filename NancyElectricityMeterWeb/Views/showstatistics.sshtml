@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>NancyElectricityMeterWeb</title>
+
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body bgcolor="black" text="yellow">
+    <p></p>
+
+
+    Number of kilowatthours since midnight: @Model.ElectricityFromMidnight.NumberOfKiloWatts<br />
+    Number of kilowatthours last 24 hours: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
+    Number of kilowatthours previous day: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
+    Number of kilowatthours since start of week: @Model.ElectricityFromMidnight.NumberOfKiloWatts<br />
+
+    Number of kilowatthours previous week: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
+    Number of kilowatthours previous month: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
+    Number of kilowatthours last 7 days: @Model.ElectricityLastSevenDays.NumberOfKiloWatts<br />
+    Number of kilowatthours last 30 days: @Model.ElectricityLastMonth.NumberOfKiloWatts<br />
+    Number of kilowatthours last 6 months: @Model.ElectricityLastSixMonths.NumberOfKiloWatts<br />
+    Number of kilowatthours last 12 months: @Model.ElectricityLastYear.NumberOfKiloWatts<br />
+
+
+    <br />
+</html>

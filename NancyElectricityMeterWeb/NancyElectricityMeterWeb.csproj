@@ -61,6 +61,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Shouldly, Version=2.8.0.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shouldly.2.8.0\lib\net40\Shouldly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />
@@ -84,6 +92,11 @@
     <Compile Include="Modules\ShowImageModule.cs" />
     <Compile Include="Modules\IndexModule.cs" />
     <Compile Include="Modules\ShowStandardImage.cs" />
+    <Compile Include="Modules\Statistics\DateHelper.cs" />
+    <Compile Include="Modules\Statistics\DateHelperTests.cs" />
+    <Compile Include="Modules\Statistics\ElectricityInPeriode.cs" />
+    <Compile Include="Modules\Statistics\ElectricityStatisticsViewModel.cs" />
+    <Compile Include="Modules\Statistics\ShowStatisticsModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +110,9 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\tw.pubxml" />
+    <Content Include="Views\showstatistics.sshtml">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

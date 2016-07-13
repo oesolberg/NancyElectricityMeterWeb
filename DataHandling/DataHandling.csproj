@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetElectricityValuesForAPeriode.cs" />
+    <Compile Include="IGetElectricityValuesForAPeriode.cs" />
     <Compile Include="ImageData.cs" />
     <Compile Include="GetImageFromDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
