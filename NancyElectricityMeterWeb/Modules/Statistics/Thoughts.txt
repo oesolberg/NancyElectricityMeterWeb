@@ -1,0 +1,18 @@
+﻿Statistics
+
+Should be able to have 
+* per hour
+* per day
+* per week
+* per month
+* per year?
+
+Database stuff
+One table for each type?
+
+
+id, typeOfTimeUnit, datetime start, week/day/month/year number?,number, datecreated
+
+typeOfTimeUnit=hour, day, week, month
+
+Create a service for doing this as scheduled intervalls (create the neccesary stats since it will be timeconsuming to do it on the fly)

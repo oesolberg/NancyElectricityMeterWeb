@@ -16,17 +16,21 @@
 
 
     Number of kilowatthours since midnight: @Model.ElectricityFromMidnight.NumberOfKiloWatts<br />
-    Number of kilowatthours last 24 hours: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
+    Number of kilowatthours last 24 hours: @Model.ElectricityLastTwentyFourHours.NumberOfKiloWatts<br />
     Number of kilowatthours previous day: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
-    Number of kilowatthours since start of week: @Model.ElectricityFromMidnight.NumberOfKiloWatts<br />
-
-    Number of kilowatthours previous week: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
-    Number of kilowatthours previous month: @Model.ElectricityPreviousDay.NumberOfKiloWatts<br />
+    Number of kilowatthours since start of week: @Model.ElectricitySinceStartOfWeek.NumberOfKiloWatts<br />
+    Number of kilowatthours since start of month: @Model.ElectricitySinceStartOfMonth.NumberOfKiloWatts<br />
+    Number of kilowatthours previous week: @Model.ElectricityPreviousWeek.NumberOfKiloWatts<br />
+    Number of kilowatthours previous month: @Model.ElectricityPreviousMonth.NumberOfKiloWatts<br />
     Number of kilowatthours last 7 days: @Model.ElectricityLastSevenDays.NumberOfKiloWatts<br />
     Number of kilowatthours last 30 days: @Model.ElectricityLastMonth.NumberOfKiloWatts<br />
     Number of kilowatthours last 6 months: @Model.ElectricityLastSixMonths.NumberOfKiloWatts<br />
     Number of kilowatthours last 12 months: @Model.ElectricityLastYear.NumberOfKiloWatts<br />
 
-
     <br />
+    <br />
+    <br />
+    <a href="/showimage">Show latest image</a><br />
+    <br/>
+    <a href="/">Back to main</a>
 </html>

@@ -34,10 +34,10 @@ namespace NancyElectricityMeterWeb.Modules.Statistics
                 ElectricityLastYear = GetElectricityForAPeriode(DateTime.Now.AddYears(-1), DateTime.Now),
                 ElectricityLastTwentyFourHours = GetElectricityForAPeriode(DateTime.Now.AddHours(-24), DateTime.Now),
 
-                ElectricitySinceStartOfWeek = GetElectricityForAPeriode(FindStartOfWeek(DateTime.Now), DateTime.Now),
-                ElectricityPreviousWeek = GetElectricityForAPeriode(FindStartOfWeek(DateTime.Now).AddDays(-7), FindStartOfWeek(DateTime.Now)),
-                ElectricitySinceStartOfMonth = GetElectricityForAPeriode(FindStartOfMonth(DateTime.Now), DateTime.Now),
-                ElectricityPreviousMonth = GetElectricityForAPeriode(FindStartOfMonth(DateTime.Now), FindStartOfMonth(DateTime.Now))
+                ElectricitySinceStartOfWeek = GetElectricityForAPeriode(DateTime.Now.GetStartOfWeek(), DateTime.Now),
+                ElectricityPreviousWeek = GetElectricityForAPeriode(DateTime.Now.GetStartOfWeek().AddDays(-7), DateTime.Now.GetStartOfWeek()),
+                ElectricitySinceStartOfMonth = GetElectricityForAPeriode(DateTime.Now.GetStartOfMonth(), DateTime.Now),
+                ElectricityPreviousMonth = GetElectricityForAPeriode(DateTime.Now.GetStartOfMonth().AddDays(-1).GetStartOfMonth(), DateTime.Now.GetStartOfMonth())
             };
         }
 

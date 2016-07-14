@@ -4,41 +4,46 @@
     <meta charset="utf-8" />
     <title>NancyElectricityMeterWeb</title>
 
-	<style type="text/css">
-
-		body {
-			text-align: center;
-		}
-
-	</style>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+    </style>
 
 </head>
 <body bgcolor="black" text="yellow">
-<p></p>
-<img src="@Model.ImageNotOutlinedSrc"/>
-<br/>
-    <br/>
-<img src="@Model.ImageOutlinedSrc"/>
-<br/>
-@Model.ElectricityNumber
-<br/>
-@Model.IsValidNumber
-    <br/>@Model.FileCreatedDateTimeString;
+    <p></p>
+    <img src="@Model.ImageNotOutlinedSrc" />
+    <br />
+    <br />
+    <img src="@Model.ImageOutlinedSrc" />
+    <br />
+    @Model.ElectricityNumber
+    <br />
+    @Model.IsValidNumber
+    <br />
+    @Model.FileCreatedDateTimeString;
 
 
-<!--
+    <!--
 Show latest image if latest is not okayed
 -->
 
-<!--
+    <!--
 Links to
 latest side image
 latest front image
 Previous images
 
 -->
-    <br/><br/>
-    <a href="/showimage/@Model.PreviousId">Show previous image</a>
-
+    <br />
+    <br />
+    <a href="/showimage/@Model.PreviousId">Show previous image</a><br />
+    <br />
+    <a href="/showimage/">Show latest image</a><br />
+    <br />
+    <a href="/showstatistics">Show statistics</a><br />
+    <br />
+    <a href="/">Back to main</a>
 </body>
 </html>

@@ -83,6 +83,7 @@
   <ItemGroup>
     <Content Include="Content\nancy-logo.png" />
     <Content Include="icon.png" />
+    <Content Include="Modules\Statistics\Thoughts.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
