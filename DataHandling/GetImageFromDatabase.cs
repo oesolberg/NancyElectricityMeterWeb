@@ -10,7 +10,7 @@ namespace DataHandling
 {
     public class GetImageFromDatabase
     {
-        private string _connectionString;
+        private readonly string _connectionString;
 
         public GetImageFromDatabase()
         {

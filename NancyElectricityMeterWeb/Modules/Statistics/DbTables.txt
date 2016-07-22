@@ -1,0 +1,54 @@
+﻿IF OBJECT_ID('[dbo].[HourStatistics]', 'U') IS NOT NULL 
+  DROP TABLE [dbo].[HourStatistics]; 
+IF OBJECT_ID('[dbo].[MonthStatistics]', 'U') IS NOT NULL 
+  DROP TABLE [dbo].[MonthStatistics]; 
+IF OBJECT_ID('[dbo].[WeekStatistics]', 'U') IS NOT NULL 
+  DROP TABLE [dbo].[WeekStatistics]; 
+IF OBJECT_ID('[dbo].[DayStatistics]', 'U') IS NOT NULL 
+  DROP TABLE [dbo].[DayStatistics]; 
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TABLE [dbo].[HourStatistics](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[DateTimeStartOfHour] [datetime] NOT NULL,
+	[DateTimeEndOfHour] [datetime] NOT NULL,
+	[HourNumber] int not null,
+	[KWhNumber] [int] NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[UpdatedDateTime] [datetime] NULL
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[DayStatistics](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[DateTmeStartOfDay] [datetime] NOT NULL,
+	[DateTimeEndOfDay] [datetime] NOT NULL,
+	[KWhNumber] [int] NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[UpdatedDateTime] [datetime] NULL
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[WeekStatistics](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[DateTimeStartOfWeek] [datetime] NOT NULL,
+	[DateTimeEndOfWeek] [datetime] NOT NULL,
+	[WeekNumber] int not null,
+	[KWhNumber] [int] NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[UpdatedDateTime] [datetime] NULL
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[MonthStatistics](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[DateTimeStartOfMonth] [datetime] NOT NULL,
+	[DateTimeEndOfMonth] [datetime] NOT NULL,
+	[MonthNumber] int not null,
+	[KWhNumber] [int] NOT NULL,
+	[CreatedDateTime] [datetime] NOT NULL,
+	[UpdatedDateTime] [datetime] NULL
+) ON [PRIMARY]
