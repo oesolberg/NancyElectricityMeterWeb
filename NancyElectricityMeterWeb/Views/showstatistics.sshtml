@@ -37,7 +37,7 @@
     <br />
     <br />
     <br />
-    <a href="/showimage">Show latest image</a><br />
+    <a href="~/showimage">Show latest image</a><br />
     <br />
     <a href="/">Back to main</a>
 </html>

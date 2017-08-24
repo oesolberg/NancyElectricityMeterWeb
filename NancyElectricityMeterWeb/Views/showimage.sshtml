@@ -38,12 +38,12 @@ Previous images
 -->
     <br />
     <br />
-    <a href="/showimage/@Model.PreviousId">Show previous image</a><br />
+    <a href="~/showimage/@Model.PreviousId">Show previous image</a><br />
     <br />
-    <a href="/showimage/">Show latest image</a><br />
+    <a href="~/showimage/">Show latest image</a><br />
     <br />
-    <a href="/showstatistics">Show statistics</a><br />
+    <a href="~/showstatistics">Show statistics</a><br />
     <br />
-    <a href="/">Back to main</a>
+    <a href="~/">Back to main</a>
 </body>
 </html>

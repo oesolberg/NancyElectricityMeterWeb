@@ -38,8 +38,8 @@ Previous images
 -->
     <br />
     <br />
-<a href="/showimage">Show latest image</a><br/>
+<a href="~/showimage">Show latest image</a><br/>
     <br/>
-    <a href="/showstatistics">Show statistics</a>
+    <a href="~/showstatistics">Show statistics</a>
 </body>
 </html>
